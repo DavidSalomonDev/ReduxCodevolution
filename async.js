@@ -67,7 +67,7 @@ const reducer = (state = initialState, action) => {
 
 const fetchUsers = () => {
 	return async function (dispatch) {
-		dispatch(fetchUsersRequest());
+		dispatch(fetchUsersRequest);
 		try {
 			const response = await axios.get(
 				"https://jsonplaceholder.typicode.com/users"
